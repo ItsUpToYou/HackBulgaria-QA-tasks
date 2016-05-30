@@ -6,7 +6,7 @@ jdk:
   - oraclejdk7
 
 script:
-  - javac -cp .:./lib/junit-4.12.jar Calculator.java CalculatorTest.java
+  - javac -cp .:./QA/junit-4.12.jar Calculator.java CalculatorTest.java
 
 after_success:
-  - java -cp .:./lib/junit-4.12.jar org.junit.runner.JUnitCore CalculatorTest
+  - java -cp .:./QA/junit-4.12.jar org.junit.runner.JUnitCore CalculatorTest
